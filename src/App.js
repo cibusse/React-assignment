@@ -28,7 +28,7 @@ function ContactList() {
             </div>
             <h5 id="name" key={contact.name}>{contact.name}</h5>
             <h6 id="username" key={contact.username}>@{contact.username}</h6>
-            <a id="website" key={contact.website} href="">htpp://{contact.website}</a>
+            <a id="website" key={contact.website} href="https://www.google.com/">htpp://{contact.website}</a>
             <button className="show-btn" onClick={()=> setButtonPopup(true)}>MORE DETAILS
             </button>
             </div>
