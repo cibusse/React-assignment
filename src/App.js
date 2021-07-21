@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios';
 import "./index.css"
-import "./details.css"
 import Popup from "./details"
 
 function ContactList() {
@@ -20,7 +19,7 @@ function ContactList() {
 
   const [buttonPopup, setButtonPopup] = useState (false);
     return (
-      <div>
+      <>
           <Popup trigger={buttonPopup} setTrigger={setButtonPopup}></Popup>
         {contact.map(contact => (
           <div className="card">
@@ -33,7 +32,7 @@ function ContactList() {
             </button>
             </div>
         ))}
-      </div> 
+      </> 
     )
  }
 export default ContactList;
